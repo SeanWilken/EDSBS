@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup SD card Emudeck saves
+After=default.target
+
+[Service]
+ExecStart=/usr/bin/bash /home/deck/Documents/Scripts/emudeck-save-backup.sh
+Type=simple
+
+[Install]
+WantedBy=default.target
